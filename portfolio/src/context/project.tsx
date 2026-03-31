@@ -35,6 +35,5 @@ export const ProjectProvider = ({ children }: { children: React.ReactNode }) => 
 
 export const useProject = () => {
   const context = useContext(ProjectContext);
-  if (!context) throw new Error("useSubNav must be used inside provider");
   return context;
 };
