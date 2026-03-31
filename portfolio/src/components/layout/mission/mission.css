@@ -1,0 +1,12 @@
+.Mission{
+    background-color: red;
+    padding: 50px;
+   
+}
+
+
+.Mission-Child{
+    background-color: aqua;
+    padding: 50px;
+    border-radius: 15px;
+}

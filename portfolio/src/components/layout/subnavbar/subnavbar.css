@@ -1,0 +1,43 @@
+.subnavbar {
+    background-color: rgba(0, 0, 0, 0.26);
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: 9;
+    box-sizing: border-box;
+
+}
+
+.subnavbar-child {
+    background-color: red;
+    height: 100%;
+    width: 100%;
+}
+
+.subnavbar-expande {
+    background-color: rgb(255, 246, 246);
+    padding: 10px;
+    border-radius: 10px;
+    touch-action: manipulation;
+    cursor: pointer;
+}
+
+.subnavbar-expande:hover {
+    outline: 2px rgb(239, 230, 248) solid;
+    outline-offset: 2px;
+}
+
+.subnavbar-close {
+    background-color: rgb(255, 246, 246);
+    padding: 10px;
+    border-radius: 10px;
+    touch-action: manipulation;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.subnavbar-close:hover {
+    outline: 2px rgb(239, 230, 248) solid;
+    outline-offset: 2px;
+    
+}

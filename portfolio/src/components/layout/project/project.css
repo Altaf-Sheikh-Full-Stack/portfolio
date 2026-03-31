@@ -1,0 +1,38 @@
+.Project-Section {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Project-Parent {
+    background-color: bisque;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.Project {
+    background-color: aqua;
+    padding: 10px;
+    cursor: pointer;
+    transition: 250ms;
+    border-radius: 15px;
+}
+
+.Project:hover{
+    outline: 5px aqua solid;
+    outline-offset: 5px;
+    
+}
+
+
+
+.Project-Img {
+    width: 350px;
+    object-fit: cover;
+    aspect-ratio: 6 / 3;
+}

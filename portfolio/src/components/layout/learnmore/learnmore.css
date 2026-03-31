@@ -1,0 +1,40 @@
+.LearnMore {
+    /* background-color: rgb(255, 230, 230); */
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    bottom: 0%;
+    overflow: scroll;
+    padding: 50px;
+    box-sizing: border-box;
+    backdrop-filter: blur(100px);
+}
+
+.LearnMore-Content {
+    background-color: aqua;
+}
+
+
+.LearnMore-Card-Imgs {
+    width: 100%;
+    object-fit: contain;
+    box-sizing: border-box;
+    padding-top: 0px;
+}
+
+.LearnMore-Card-SubImgs{
+    display: flex;
+    gap: 10px;
+    
+}
+
+.LearnMore-Card-SubImgs-Imgs{
+    width: 100px;
+    cursor: pointer;
+    transition: 250ms;
+}
+
+.LearnMore-Card-SubImgs-Imgs:hover{
+    outline: 2px red solid;
+    outline-offset: 2px;   
+}

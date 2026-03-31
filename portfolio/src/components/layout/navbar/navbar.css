@@ -1,0 +1,27 @@
+.Navbar{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 10px;
+    box-sizing: border-box;
+    
+}
+
+.Navbar-Open{
+    padding: 10px;
+    border-radius: 50px;
+    appearance: none;
+    touch-action: manipulation;
+    outline: 2px rgb(206, 213, 255) solid;
+    cursor: pointer;
+    transition: 250ms;
+}
+
+.Navbar-Open:hover{
+    background-color: blueviolet;
+    outline: 2px red double;
+    outline-offset: 2px;
+    color: white;
+    fill: white;
+}

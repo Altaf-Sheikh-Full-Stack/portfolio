@@ -1,0 +1,44 @@
+.Skill {
+    background-color: red;
+    display: flex;
+    height: calc(100vh - 60px);
+    max-width: 1920px;
+    max-height: 1080px;
+    margin: auto;
+}
+
+.Skill-Left {
+    background-color: aqua;
+    width: 30%;
+}
+
+.Skill-Right {
+    display: flex;
+    gap: 30px;
+    width: 70%;
+    background-color: blue;
+    justify-content: center;
+    align-items: center;
+}
+
+.Skill-Right-child {
+    display: flex;
+    gap: 70px;
+    flex-wrap: wrap;
+    padding: 30px;
+    justify-content: center;
+}
+
+.Skill-Right-child p {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 250ms;
+    border-radius: 7px;
+}
+
+.Skill-Right-child p:hover {
+    background-color: red;
+    outline: 5px red solid;
+    outline-offset: 5px;
+}
