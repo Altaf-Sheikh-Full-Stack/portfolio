@@ -1,0 +1,33 @@
+
+import './about.css'
+
+
+const About = () => {
+    return (
+        <div className="About">
+            <h1 className='About-H1'>Hi,
+                My name is altaf sheikh i am a full stack devloper with 3 years if industry exprince
+            </h1>
+            <div className='About-Info'>
+                <div className='About-Info-Child-1'>
+                    <h3>Language</h3>
+                    <p>English, Hindi</p>
+                </div>
+                <div className='About-Info-Child-2'>
+                    <h3>Hobby</h3>
+                    <p>Coding, building product and Music</p>
+                </div>
+                <div className='About-Info-Child-3'>
+                    <h3>Location</h3>
+                    <p>Hero delhi india</p>
+                </div>
+                <div className='About-Info-Child-4'>
+                    <h3>Age</h3>
+                    <p>21 year old</p>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default About

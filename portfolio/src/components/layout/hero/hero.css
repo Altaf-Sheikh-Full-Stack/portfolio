@@ -1,13 +1,12 @@
 .Hero {
     background-color: red;
-    height: calc(100vh - 60px);
+    height: calc(100dvh - 30px);
     margin: 0%;
     max-width: 1920px;
-    max-height: 1080px;
     margin: auto;
     display: flex;
     box-sizing: border-box;
-
+    
 }
 
 .Hero-Left {
@@ -25,7 +24,6 @@
 
 .Hero-Left-h1 {
     margin: 0%;
-
     font-size: clamp(3rem, calc(2rem + 10 * min(100vw, 1920px) / 100), 15rem);
     line-height: 100%;
     font-family: "Momo Trust Display", sans-serif;
@@ -48,8 +46,37 @@
 .Hero-Right-L1-Top {
     height: 60%;
     background-color: blueviolet;
-
+    padding: min(5em, 8%);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    
 }
+
+.Hero-Right-L1-Top-H1{
+    margin: 0%;
+}
+
+
+.Hero-Right-L1-Top-Info{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 200px 200px;
+    margin-top: min(8em, 8%);
+}
+
+
+.Hero-Right-L1-Top-Info-Child{
+    background-color: red;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
 
 .Hero-Right-L1-Bottom {
     height: 40%;
@@ -84,4 +111,10 @@
     height: 30%;
     padding: 30px;
     box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
 }

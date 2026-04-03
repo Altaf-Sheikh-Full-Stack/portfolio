@@ -1,38 +1,41 @@
-.Project-Section {
-    background-color: red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.Project-Parent {
-    background-color: bisque;
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
 .Project {
+    background-color: red;
+
+}
+
+.Project-About{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+}
+
+.Project-Card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.Project-Card-Content {
     background-color: aqua;
     padding: 10px;
     cursor: pointer;
     transition: 250ms;
-    border-radius: 15px;
+    width: 100%;
+    max-width: 300px;
 }
 
-.Project:hover{
+.Project-Card-Content:hover {
     outline: 5px aqua solid;
     outline-offset: 5px;
-    
 }
 
 
 
 .Project-Img {
-    width: 350px;
+    width: 100%;
     object-fit: cover;
     aspect-ratio: 6 / 3;
 }

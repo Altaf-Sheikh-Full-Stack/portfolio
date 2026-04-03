@@ -1,0 +1,101 @@
+.Hero {
+    background-color: rgb(0, 0, 0);
+    display: grid;
+    width: min(100dvw, 1920px);
+    height: max(400px, calc(min(100dvh, 1080px) - 100px));
+    margin: auto;
+    grid-template-areas:
+        "box1 box1 box2 box3"
+        "box1 box1 box2 box5"
+        "box1 box1 box4 box5";
+}
+
+.Hero-Child-1 {
+    background-color: aqua;
+    grid-area: box1;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+
+.Hero-Child-1-H1 {
+    font-size: clamp(3rem, calc(2rem + 10 * min(100vw, 1920px) / 100), 15rem);
+}
+
+.Hero-Child-2 {
+    background-color: beige;
+    grid-area: box2;
+
+}
+
+
+.Hero-Child-2-img {
+    background-color: red;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+}
+
+.Hero-Child-3 {
+    background-color: blue;
+    grid-area: box3;
+    overflow-x: scroll;
+}
+
+.Hero-Child-4 {
+    background-color: blueviolet;
+    grid-area: box4;
+    padding: min(5rem, 8%);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+
+.Hero-Child-4 h1{
+    box-sizing: border-box;
+}
+
+.Hero-Child-4-Buttons{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+
+.Hero-Child-5 {
+    background-color: brown;
+    grid-area: box5;
+    padding: min(5rem, 8%);
+}
+
+
+@media(max-width: 1000px) {
+    .Hero {
+        grid-template-areas:
+            "box1 box1 box2"
+            "box1 box1 box2"
+            "box1 box1 box5"
+            "box4 box3 box5";
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .Hero {
+        height: 2000px;
+        grid-template-areas:
+            "box2"
+            "box2"
+            "box1"
+            "box5"
+            "box5"
+            "box3"
+            "box4";
+    }
+}
