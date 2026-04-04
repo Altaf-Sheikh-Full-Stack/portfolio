@@ -1,44 +1,254 @@
 .Skill {
-    background-color: red;
-    display: flex;
-    height: calc(100vh - 60px);
-    max-width: 1920px;
-    max-height: 1080px;
+    background-color: yellow;
+    display: grid;
+    width: min(100dvw, 1920px);
     margin: auto;
+    grid-template-areas:
+        "box1 box2 box3"
+        "box1 box4 box5";
 }
 
-.Skill-Left {
+
+.Skill-Box-1 {
+    grid-area: box1;
     background-color: aqua;
-    width: 30%;
-}
-
-.Skill-Right {
+    padding: 50px;
+    box-sizing: border-box;
     display: flex;
-    gap: 30px;
-    width: 70%;
-    background-color: blue;
-    justify-content: center;
-    align-items: center;
+    align-items: end;
 }
 
-.Skill-Right-child {
+
+.Skill-Box-1-H1 {
+    font-size: clamp(3rem, calc(2rem + 10 * min(100vw, 1920px) / 100), 15rem);
+    font-family: "Momo Trust Display", sans-serif;
+}
+
+.Skill-Box-2 {
+    grid-area: box2;
+    box-sizing: border-box;
+    background:
+        radial-gradient(ellipse 80% 60% at 70% 20%, rgba(175, 109, 255, 0.85), transparent 68%),
+        radial-gradient(ellipse 70% 60% at 20% 80%, rgba(255, 100, 180, 0.75), transparent 68%),
+        radial-gradient(ellipse 60% 50% at 60% 65%, rgba(255, 235, 170, 0.98), transparent 68%),
+        radial-gradient(ellipse 65% 40% at 50% 60%, rgba(120, 190, 255, 0.3), transparent 68%),
+        linear-gradient(180deg, #f7eaff 0%, #fde2ea 100%);
+
+
+
+}
+
+
+
+.Skill-Box-2-Content {
+    margin: 30px;
+    height: calc(100% - 60px);
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+    box-sizing: border-box;
     display: flex;
-    gap: 70px;
-    flex-wrap: wrap;
-    padding: 30px;
-    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    cursor: default;
+
+
+
+
+    background: radial-gradient(125% 125% at 50% 10%, #ffffff7e 40%, #7c3aed 100%)
 }
 
-.Skill-Right-child p {
-    padding: 10px;
-    cursor: pointer;
-    font-size: 20px;
-    transition: 250ms;
-    border-radius: 7px;
+
+
+
+
+.Skill-Box-2-Content-Details {
+    margin-top: 50px;
+    display: grid;
+    gap: 15px;
+    font-size: larger;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
-.Skill-Right-child p:hover {
-    background-color: red;
-    outline: 5px red solid;
-    outline-offset: 5px;
+.Skill-Box-3 {
+    grid-area: box3;
+    background-color: blanchedalmond;
+
+
+    background:
+        radial-gradient(ellipse 85% 65% at 8% 8%, rgba(175, 109, 255, 0.42), transparent 60%),
+        radial-gradient(ellipse 75% 60% at 75% 35%, rgba(255, 235, 170, 0.55), transparent 62%),
+        radial-gradient(ellipse 70% 60% at 15% 80%, rgba(255, 100, 180, 0.40), transparent 62%),
+        radial-gradient(ellipse 70% 60% at 92% 92%, rgba(120, 190, 255, 0.45), transparent 62%),
+        linear-gradient(180deg, #f7eaff 0%, #fde2ea 100%)
+}
+
+
+
+
+
+
+
+
+.Skill-Box-3-Content {
+    margin: 30px;
+    height: calc(100% - 60px);
+    border-radius: 10px;
+    padding: 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: default;
+    justify-content: space-between;
+    background-color: rgba(187, 30, 226, 0.192);
+
+
+
+
+
+    background: radial-gradient(125% 125% at 50% 10%, #ffffffb7 40%, #dd0f65 100%)
+}
+
+
+
+
+
+
+
+.Skill-Box-3-Content-Details {
+    margin-top: 50px;
+    display: grid;
+    gap: 15px;
+    font-size: larger;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    margin-top: 20px;
+}
+
+.Skill-Box-4 {
+    grid-area: box4;
+    background-color: black;
+
+
+
+}
+
+
+
+
+.Skill-Box-4-Content {
+    margin: 30px;
+    height: calc(100% - 60px);
+
+    border-radius: 10px;
+    padding: 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    cursor: default;
+
+
+
+    /* Background (all gradients combined) */
+    background:
+        radial-gradient(circle at 50% 50%, rgba(255, 0, 255, 0.08) 0%, transparent 45%),
+        radial-gradient(circle at 50% 50%, rgba(0, 255, 255, 0.08) 10%, transparent 55%),
+        radial-gradient(circle at 50% 50%, #111 0%, #1a1a1a 100%);
+
+    background-blend-mode: soft-light;
+
+    /* Glow + lighting */
+    box-shadow:
+        inset 0 0 60px rgba(255, 255, 255, 0.3),
+        inset 20px 0 80px rgba(255, 0, 255, 0.2),
+        inset -20px 0 80px rgba(0, 255, 255, 0.2),
+        inset 20px 0 300px rgba(255, 0, 255, 0.1),
+        inset -20px 0 300px rgba(0, 255, 255, 0.1),
+        0 0 50px rgba(255, 255, 255, 0.1),
+        -10px 0 80px rgba(255, 0, 255, 0.1),
+        10px 0 80px rgba(0, 255, 255, 0.1);
+
+    /* Final polish */
+    filter: contrast(1.05) brightness(1.05) blur(0.5px);
+
+    color: white;
+}
+
+.Skill-Box-4-Content-Details {
+    margin-top: 50px;
+    display: grid;
+    gap: 15px;
+    font-size: larger;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    color: wheat;
+}
+
+.Skill-Box-5 {
+    grid-area: box5;
+    /* background-color: green; */
+    background:
+        radial-gradient(ellipse 80% 60% at 70% 20%, rgba(175, 109, 255, 0.85), transparent 68%),
+        radial-gradient(ellipse 70% 60% at 20% 80%, rgba(255, 100, 180, 0.75), transparent 68%),
+        radial-gradient(ellipse 60% 50% at 60% 65%, rgba(255, 235, 170, 0.98), transparent 68%),
+        radial-gradient(ellipse 65% 40% at 50% 60%, rgba(120, 190, 255, 0.3), transparent 68%),
+        linear-gradient(180deg, #f7eaff 0%, #fde2ea 100%)
+}
+
+
+
+
+
+.Skill-Box-5-Content {
+    margin: 30px;
+    height: calc(100% - 60px);
+    border-radius: 10px;
+    padding: 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    cursor: default;
+
+
+
+
+
+
+    background: radial-gradient(125% 125% at 50% 10%, #ffffff59 40%, #3fdd0fb9 100%)
+}
+
+.Skill-Box-5-Content-Details {
+    margin-top: 50px;
+    display: grid;
+    gap: 15px;
+    font-size: larger;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+}
+
+
+
+@media (max-width:1200px) {
+    .Skill {
+        grid-template-areas:
+            "box1 box1"
+            "box2 box3"
+            "box4 box5";
+    }
+}
+
+
+@media (max-width:800px) {
+    .Skill {
+        grid-template-areas:
+            "box1"
+            "box2"
+            "box3"
+            "box4"
+            "box5";
+    }
 }

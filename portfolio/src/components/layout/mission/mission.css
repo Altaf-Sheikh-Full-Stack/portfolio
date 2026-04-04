@@ -1,11 +1,13 @@
-.Mission{
-    background-color: red;
-    padding: 50px;
-   
+.Mission {
+    background-color: white;
+    width: min(100dvw, 1920px);
+    padding: 10px;
+    margin: auto;
+    box-sizing: border-box;
 }
 
 
-.Mission-Child{
+.Mission-Child {
     background-color: aqua;
     padding: 50px;
     border-radius: 15px;

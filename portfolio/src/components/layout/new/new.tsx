@@ -1,6 +1,6 @@
 import './new.css'
 import img from '../../../assets/img.png'
-import GitCommit from '../hero/gitcommit/gitcommit'
+import GitCommit from './gitcommit/gitcommit'
 import About from './about/about'
 import PrimaryButton from '../../common/buttons/primary/button'
 import SecondaryButton from '../../common/buttons/secondary/button'

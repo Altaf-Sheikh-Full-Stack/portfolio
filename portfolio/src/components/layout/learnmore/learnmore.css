@@ -1,16 +1,6 @@
-.LearnMore {
-    /* background-color: rgb(255, 230, 230); */
-    width: 100%;
-    position: fixed;
-    top: 0%;
-    bottom: 0%;
-    overflow: scroll;
-    padding: 50px;
-    box-sizing: border-box;
-    backdrop-filter: blur(100px);
-}
 
-.LearnMore-Content {
+
+.LearnMore {
     background-color: aqua;
 }
 
