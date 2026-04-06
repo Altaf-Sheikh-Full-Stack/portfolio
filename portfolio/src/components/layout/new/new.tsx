@@ -4,6 +4,7 @@ import GitCommit from './gitcommit/gitcommit'
 import About from './about/about'
 import PrimaryButton from '../../common/buttons/primary/button'
 import SecondaryButton from '../../common/buttons/secondary/button'
+
 const Hero = () => {
     console.log('new')
     return (

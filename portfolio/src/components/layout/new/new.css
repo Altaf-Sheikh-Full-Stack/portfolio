@@ -4,55 +4,64 @@
     width: min(100dvw, 1920px);
     height: auto;
     margin: auto;
+    gap: 30px;
+    box-sizing: border-box;
+    padding: 30px;
     grid-template-areas:
-        "box1 box2 box5"
-        "box1 box4 box3"
+        "box2 box1 box1"
+        "box3 box4 box5"
 
 
 }
 
 .Hero-Child-1 {
-    background-color: aqua;
+    border-radius: var(--radiusCard);
     grid-area: box1;
     display: flex;
     justify-content: start;
     align-items: end;
     padding: min(4rem, 8%);
+    box-sizing: border-box;
+    background: #ffffff;
+    background: linear-gradient(176deg, rgba(255, 255, 255, 1) 0%, rgb(162, 0, 255) 100%);
 }
 
 .Hero-Child-1-H1 {
     font-size: clamp(3rem, calc(2rem + 10 * min(100vw, 1920px) / 100), 15rem);
+    font-family: "Momo Trust Display", sans-serif;
+    line-height: 100%;
+    font-display: swap;
 }
 
 .Hero-Child-2 {
     background-color: beige;
     grid-area: box2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
+    border-radius: var(--radiusCard);
+
 }
 
 
 .Hero-Child-2-img {
+    border-radius: var(--radiusCard);
     background-color: red;
     object-fit: cover;
     width: 100%;
     height: 100%;
-    height: auto;
-    border-radius: 15px;
-
 }
 
 .Hero-Child-3 {
+    border-radius: var(--radiusCard);
     background-color: blue;
     grid-area: box3;
-    overflow-x: hidden;
-    height: 350px;
-
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .Hero-Child-4 {
+    border-radius: var(--radiusCard);
     background-color: blueviolet;
     grid-area: box4;
     padding: min(5rem, 8%);
@@ -77,11 +86,12 @@
 
 
 .Hero-Child-5 {
+    border-radius: var(--radiusCard);
     background-color: brown;
     grid-area: box5;
     padding: min(5rem, 8%);
-
-
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+     box-sizing: border-box;
 }
 
 

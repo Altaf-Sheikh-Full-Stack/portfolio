@@ -1,10 +1,11 @@
 import './learnmore.css'
 
-import { useModal } from '../../../context/modal'
+import {  useModalStore } from '../../../context/modal'
 
 const LearnMore = () => {
-    const { component } = useModal()
 
+
+    const component = useModalStore((state) => state.component);
 
 
 

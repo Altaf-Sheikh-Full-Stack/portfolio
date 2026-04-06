@@ -33,24 +33,6 @@ const data = [
         username: "Altaf Sheikh",
         date: "15|02|2026"
     },
-          {
-        img: img,
-        tital: "Added: Support system",
-        username: "Altaf Sheikh",
-        date: "15|02|2026"
-    },
-          {
-        img: img,
-        tital: "Added: Support system",
-        username: "Altaf Sheikh",
-        date: "15|02|2026"
-    },
-          {
-        img: img,
-        tital: "Added: Support system",
-        username: "Altaf Sheikh",
-        date: "15|02|2026"
-    },
 
 ]
 

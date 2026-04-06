@@ -1,41 +1,100 @@
 .Project {
     background-color: red;
-
-}
-
-.Project-About{
+    padding: min(10rem, 5%);
+    max-width: 1920px;
+    margin: auto;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    margin: auto;
+    gap: 50px;
+}
+
+.Project-H1 {
+    background-color: white;
+    font-family: Roboto;
+    font-size: 40px;
+    font-display: fallback;
     width: 50%;
 }
 
 .Project-Card {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 30px;
-    max-width: 1000px;
-    margin: auto;
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.Project-Card::-webkit-scrollbar {
+    display: none;
 }
 
 .Project-Card-Content {
     background-color: aqua;
-    padding: 10px;
     cursor: pointer;
     transition: 250ms;
-    width: 100%;
-    max-width: 300px;
+    display: grid;
+    grid-template-areas: "stack";
+    place-items: end;
+    scroll-snap-align: start;
+
 }
 
-.Project-Card-Content:hover {
-    outline: 5px aqua solid;
-    outline-offset: 5px;
+
+.Project-Card-Content:hover>.Project-Card-details svg {
+    background-color: black;
+    color: white;
+    visibility: visible;
 }
 
 
 
 .Project-Img {
-    width: 100%;
+    width: min(500px, 70vw);
     object-fit: cover;
-    aspect-ratio: 6 / 3;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+
+.Project-Card-details {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: rgb(255, 255, 255);
+    width: calc(100% - 40px);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px;
+}
+
+
+
+.Project-Card-details svg {
+    transition: 250ms;
+    padding: 20px;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+
+.Project-Arrows {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+
+
+.Project-Arrows svg {
+    background-color: rgb(216, 174, 174);
+    padding: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.Project-Arrows svg:hover{
+    outline: 2px black solid;
+    outline-offset: 2px;
 }

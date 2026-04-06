@@ -1,5 +1,4 @@
-import { createContext, useContext, useState } from "react";
-
+import { create } from "zustand";
 
 type Image = {
   url: string;
@@ -12,27 +11,17 @@ export type ProjectType = {
   budget: string;
 };
 
-type Datatype = {type: "Navbar"} | { type: "Project"; data: ProjectType[] } | {type : "null"}
+type Datatype =
+  | { type: "Navbar" }
+  | { type: "Project"; data: ProjectType[] }
+  | { type: "null" };
 
-type ModalContextType = {
+type ModalStore = {
   component: Datatype;
   setComponent: (value: Datatype) => void;
 };
 
-const ModalContext = createContext<ModalContextType | null>(null);
-
-export const ModalProvider = ({ children }: { children: React.ReactNode }) => {
-  const [component, setComponent] = useState<Datatype>({type: "null"});
-
-  return (
-    <ModalContext.Provider value={{ component, setComponent }}>
-      {children}
-    </ModalContext.Provider>
-  );
-};
-
-export const useModal = () => {
-  const context = useContext(ModalContext);
-  if (!context) throw new Error("Model must be used inside provider");
-  return context;
-};
+export const useModalStore = create<ModalStore>((set) => ({
+  component: { type: "null" },
+  setComponent: (value) => set({ component: value }),
+}));
