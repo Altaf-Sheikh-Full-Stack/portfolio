@@ -6,7 +6,8 @@ type Image = {
 
 export type ProjectType = {
   imgs: Image[];
-  name: string;
+  category: string;
+  heading: string;
   description: string;
   budget: string;
 };
@@ -22,6 +23,6 @@ type ModalStore = {
 };
 
 export const useModalStore = create<ModalStore>((set) => ({
-  component: { type: "Navbar" },
+  component: { type: "null" },
   setComponent: (value) => set({ component: value }),
 }));

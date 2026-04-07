@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './model.css'
 
 import Navbar from '../navbar/navbar'
@@ -35,6 +35,20 @@ const SubNavBar = () => {
         }
     };
 
+    
+
+    useEffect(() => {
+        if (component.type !== "null") {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "auto";
+        }
+
+        return () => {
+            document.body.style.overflow = "auto";
+        };
+    }, [component]);
+
 
 
 
@@ -58,10 +72,13 @@ const SubNavBar = () => {
                 </svg>
             </div>
 
-            
-            <div className='Model-Content'>
-                {renderComponent()}
-            </div>
+<div onClick={(e) => e.stopPropagation()} className='Model-Content'>
+    
+    <div className="Model-Body">
+        {renderComponent()}
+    </div>
+
+</div>
         </div>
     )
 }

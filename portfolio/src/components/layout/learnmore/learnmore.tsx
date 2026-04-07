@@ -20,7 +20,8 @@ const LearnMore = () => {
                             <img className='LearnMore-Card-SubImgs-Imgs' key={key} src={img.url} alt="" />
                         ))}
                     </div>
-                    <h1 className='LearnMore-Card-Name'>{data.name}</h1>
+                    <p className='LearnMore-Card-Name'>{data.category}</p>
+                    <h1>{data.heading}</h1>
                 </div>
             ))}
 
