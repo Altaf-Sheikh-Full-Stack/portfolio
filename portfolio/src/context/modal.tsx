@@ -22,6 +22,6 @@ type ModalStore = {
 };
 
 export const useModalStore = create<ModalStore>((set) => ({
-  component: { type: "null" },
+  component: { type: "Navbar" },
   setComponent: (value) => set({ component: value }),
 }));

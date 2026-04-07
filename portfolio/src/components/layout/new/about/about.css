@@ -15,7 +15,6 @@
 
 .About-Info-Child-1 {
     grid-area: box1;
-    background-color: rgb(24, 204, 18);
     display: flex;
     gap: 10px;
     flex-direction: column;
@@ -25,7 +24,7 @@
 
 .About-Info-Child-2 {
     grid-area: box2;
-    background-color: blueviolet;
+   
     display: flex;
     gap: 10px;
     flex-direction: column;
@@ -35,7 +34,7 @@
 
 .About-Info-Child-3 {
     grid-area: box3;
-    background-color: aqua;
+ 
     display: flex;
     gap: 10px;
     flex-direction: column;
@@ -45,7 +44,6 @@
 
 .About-Info-Child-4 {
     grid-area: box4;
-    background-color: bisque;
     display: flex;
     gap: 10px;
     flex-direction: column;
