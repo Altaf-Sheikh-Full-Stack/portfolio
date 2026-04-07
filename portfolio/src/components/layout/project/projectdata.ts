@@ -4,50 +4,55 @@ import imgs from '../../../assets/Frame 1.webp'
 import thumbnail from '../../../assets/Frame 2.webp'
 const ProjectData = [
     {
-        imgs: [{ url: imgs },{ url: img }],
+        imgs: [{ url: imgs }, { url: img }],
         thumbnail: thumbnail,
         category: "Software",
-        heading:"A full stack datalake software design for non technical user",
+        heading: "A full stack datalake software design for non technical user",
         description: "hello world",
         budget: `$996 - $1200`
     },
 
     {
-        imgs: [{ url: img },{ url: img }],
-        thumbnail: img1,
-        name: "Automate",
+        imgs: [{ url: imgs }, { url: img }],
+        thumbnail: thumbnail,
+        category: "Software",
+        heading: "A full stack datalake software design for non technical user",
         description: "hello world",
         budget: `$996 - $1200`
     },
 
     {
-        imgs: [{ url: img },{ url: img }],
-        thumbnail: img1,
-        name: "altaf1",
-        description: "hello world",
-        budget: `$996 - $1200`
-    },
-
-        {
-        imgs: [{ url: img },{ url: img }],
-        thumbnail: img1,
-        name: "altaf1",
+        imgs: [{ url: imgs }, { url: img }],
+        thumbnail: thumbnail,
+        category: "Software",
+        heading: "A full stack datalake software design for non technical user",
         description: "hello world",
         budget: `$996 - $1200`
     },
 
     {
-        imgs: [{ url: img },{ url: img }],
-        thumbnail: img1,
-        name: "altaf1",
+        imgs: [{ url: imgs }, { url: img }],
+        thumbnail: thumbnail,
+        category: "Software",
+        heading: "A full stack datalake software design for non technical user",
         description: "hello world",
         budget: `$996 - $1200`
     },
 
     {
-        imgs: [{ url: img },{ url: img }],
-        thumbnail: img1,
-        name: "altaf1",
+        imgs: [{ url: imgs }, { url: img }],
+        thumbnail: thumbnail,
+        category: "Software",
+        heading: "A full stack datalake software design for non technical user",
+        description: "hello world",
+        budget: `$996 - $1200`
+    },
+
+    {
+        imgs: [{ url: imgs }, { url: img }],
+        thumbnail: thumbnail,
+        category: "Software",
+        heading: "A full stack datalake software design for non technical user",
         description: "hello world",
         budget: `$996 - $1200`
     },
