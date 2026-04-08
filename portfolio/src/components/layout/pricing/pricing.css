@@ -9,7 +9,8 @@
 
 .Pricing-Card {
     padding: 20px;
-    background-color: whitesmoke;
+    background-color: rgba(245, 224, 255, 0.719);
+    border-radius: 15px;
 }
 
 
@@ -54,11 +55,11 @@
 
 
 .Pricing-Card-Compare {
-    padding: 20px;
+    padding: 60px;
     margin-top: 20px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    width: max-content;
+    gap: 50px;
+    max-width: 500px;
     background-color: white;
 }

@@ -1,32 +1,38 @@
 .Navbar {
-    background-color: white;
+    background-color: rgb(109, 93, 255);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-inline: 10px;
+    padding-inline: 40px;
     box-sizing: border-box;
-    padding: 20px;
-    max-width: 1920px ;
+    padding-block: 10px;
+    max-width: 1920px;
     width: 100%;
     justify-self: center;
-    border-bottom: 1px blueviolet solid;
+    border-bottom: 5px rgb(175, 89, 255) solid;
+    background: #020024;
+    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(198, 41, 255, 1) 100%);
+    color: white;
+    font-family: Roboto;
+    font-size: 20px;
+    cursor: default;
 }
 
 .Navbar-Open {
-    padding: 20px;
+    padding: 15px;
     border-radius: 50px;
     appearance: none;
     touch-action: manipulation;
     outline: 2px rgb(206, 213, 255) solid;
     cursor: pointer;
     transition: 250ms;
+    background-color: white;
+    color: #020024;
 }
 
 .Navbar-Open:hover {
-    background-color: blueviolet;
-    outline: 2px red double;
+    outline: 2px white double;
     outline-offset: 2px;
-    color: white;
-    fill: white;
-    border: none;
+    transform: scale(1.01);
 }
+

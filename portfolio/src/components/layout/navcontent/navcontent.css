@@ -1,0 +1,22 @@
+.NavContent {
+    width: 100%;
+    height: 100vh;
+}
+
+
+.NavContent-Child {
+    grid-area: box1;
+    background-color: rgb(230, 230, 230);
+    height: calc(15vh);
+    transition: 250ms;
+    font-size: 10vh;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.NavContent-Child:hover{
+    background-color: blueviolet;
+    cursor: pointer;
+    font-size: 15vh;
+}

@@ -7,7 +7,7 @@ const Pricing = () => {
 
     type Skill = | "Designer" | "Frontend" | "Backned" | "Automation" | "Deployment" | "DevOps" | "Cloud" | "Architect" | "System" | "Ai";
 
-    const [value, setValue] = useState<number>(0)
+    const [value, setValue] = useState<number>(50)
     const [check, setCheck] = useState({
         Designer: false,
         Frontend: false,
@@ -96,8 +96,8 @@ const Pricing = () => {
                     </div>
                 </div>
                 <div className='Pricing-Card-Compare' >
-                        <h2>Total cast ${value} per hour</h2>
-                        <h2>You can save upto ${value - 10} per hour</h2>
+                        <h2>If you hire each specialist individually, it will cost you ${value} per hour.</h2>
+                        <h2>But now you can Save upto ${value - 4}, Just one button away</h2>
                         <PrimaryButton name={'Hire me now Starting from $4 per hour'} />
                 </div>
             </div>
