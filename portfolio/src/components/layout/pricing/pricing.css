@@ -1,0 +1,64 @@
+.Pricing {
+    background-color: white;
+    max-width: 1920px;
+    margin: auto;
+    padding: 60px;
+    box-sizing: border-box;
+
+}
+
+.Pricing-Card {
+    padding: 20px;
+    background-color: whitesmoke;
+}
+
+
+.Pricing-Card-Skill-Card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.Pricing-Card-Skill {
+    height: 200px;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+
+.Pricing-Card-Skill:hover {
+    outline: 5px gray solid;
+}
+
+.Pricing-Active {
+    background-color: rgb(162, 176, 255);
+
+}
+
+
+.Pricing-Card-Skill p {
+    touch-action: manipulation;
+    height: calc(100% - 40px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+.Pricing-Card-Compare {
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: max-content;
+    background-color: white;
+}

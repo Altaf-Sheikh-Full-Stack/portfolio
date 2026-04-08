@@ -1,8 +1,21 @@
 
+import React, { useEffect, useRef } from 'react';
 import './about.css'
 
 
-const About = () => {
+const About = React.memo(() => {
+
+        const hasRendered = useRef(false);
+    
+        useEffect(() => {
+            if (hasRendered.current) {
+                console.log("🔁 About re-rendered");
+            } else {
+                console.log("🆕 First About render");
+                hasRendered.current = true;
+            }
+        });
+
     return (
         <div className="About">
             <h1 className='About-H1'>Hi,
@@ -28,6 +41,6 @@ const About = () => {
             </div>
         </div>
     )
-}
+})
 
-export default About
+export default React.memo(About);

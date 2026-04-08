@@ -1,12 +1,24 @@
 import './new.css'
 import img from '../../../assets/img.png'
-import GitCommit from './gitcommit/gitcommit'
+
 import About from './about/about'
 import PrimaryButton from '../../common/buttons/primary/button'
 import SecondaryButton from '../../common/buttons/secondary/button'
-
+import Testimonials from '../testimonials/testimonials'
+import { useEffect, useRef } from 'react'
 const Hero = () => {
-    console.log('new')
+    
+
+        const hasRendered = useRef(false);
+    
+        useEffect(() => {
+            if (hasRendered.current) {
+                console.log("🔁 Home re-rendered");
+            } else {
+                console.log("🆕 First Home render");
+                hasRendered.current = true;
+            }
+        });
     return (
         <section className='Hero'>
             <div className='Hero-Child-1'>
@@ -16,7 +28,8 @@ const Hero = () => {
                 <img className='Hero-Child-2-img' src={img} alt="" />
             </div>
             <div className='Hero-Child-3'>
-                <GitCommit />
+                <Testimonials/>
+                {/* <GitCommit /> */}
             </div>
             <div className='Hero-Child-4'>
                 <h1>We works togther and make thing works</h1>

@@ -2,10 +2,9 @@ import Navbar from "../components/layout/navbar/navbar";
 import Mission from "../components/layout/mission/mission";
 import Skill from "../components/layout/skills/skill";
 import Project from "../components/layout/project/project";
-import LearnMore from "../components/layout/learnmore/learnmore";
 import Modal from "../components/layout/model/model";
 import Hero from "../components/layout/new/new";
-
+import Pricing from "../components/layout/pricing/pricing";
 const HomePage = () => {
 
   return (
@@ -16,7 +15,7 @@ const HomePage = () => {
       <Mission />
       <Skill />
       <Project />
-      <LearnMore />
+      <Pricing/>
     </>
 
   )

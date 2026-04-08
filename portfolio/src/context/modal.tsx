@@ -1,10 +1,10 @@
 import { create } from "zustand";
 
-type Image = {
+interface Image {
   url: string;
 };
 
-export type ProjectType = {
+export interface ProjectType  {
   imgs: Image[];
   category: string;
   heading: string;
@@ -17,7 +17,7 @@ type Datatype =
   | { type: "Project"; data: ProjectType[] }
   | { type: "null" };
 
-type ModalStore = {
+interface ModalStore {
   component: Datatype;
   setComponent: (value: Datatype) => void;
 };
