@@ -5,6 +5,7 @@ import Project from "../components/layout/project/project";
 import Modal from "../components/layout/model/model";
 import Hero from "../components/layout/new/new";
 import Pricing from "../components/layout/pricing/pricing";
+import Footer from "../components/layout/footer/footer";
 const HomePage = () => {
 
   return (
@@ -16,6 +17,7 @@ const HomePage = () => {
       <Skill />
       <Project />
       <Pricing/>
+      <Footer/>
     </>
 
   )

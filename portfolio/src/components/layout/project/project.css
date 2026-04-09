@@ -45,8 +45,9 @@
 
 
 .Project-Card-Content:hover>.Project-Card-details svg {
-    background-color: black;
-    color: white;
+    /* background-color: black; */
+    background-color: white;
+    color: rgb(0, 0, 0);
     visibility: visible;
 }
 
@@ -86,6 +87,7 @@
     padding: 20px;
     visibility: hidden;
     cursor: pointer;
+  
 }
 
 
@@ -97,15 +99,22 @@
 
 
 .Project-Arrows svg {
-    background-color: rgb(216, 174, 174);
+    background-color: whitesmoke;
     padding: 20px;
     border-radius: 50px;
     cursor: pointer;
+    transition: 250ms;
+    touch-action: manipulation;
+    height: 30px;
+    width: 30px;
 }
 
 .Project-Arrows svg:hover{
-    outline: 2px black solid;
-    outline-offset: 2px;
+    transform: scale(1.1);
+}
+
+.Project-Arrows svg:active{
+    transform: scale(0.9);
 }
 
 

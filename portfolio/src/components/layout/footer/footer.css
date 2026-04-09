@@ -1,0 +1,41 @@
+.Footer {
+    display: flex;
+    max-width: 1920px;
+    margin: auto;
+    padding: 60px;
+    box-sizing: border-box;
+    background: radial-gradient(125% 125% at 50% 10%, #fff 40%, #7c3aed 100%);
+}
+
+
+
+
+
+
+
+
+
+
+.Footer-Child-1 {
+    grid-area: box1;
+    /* background-color: azure; */
+    width: 50%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+
+.Footer-Child-1 button {
+    width: max-content;
+}
+
+
+.Footer-Child-2 {
+    width: 50%;
+    grid-area: box2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: end;
+}
