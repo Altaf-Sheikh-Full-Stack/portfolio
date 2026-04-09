@@ -3,6 +3,8 @@
 .LearnMore {
     background-color: aqua;
     width: 100%;
+        border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 
@@ -10,6 +12,9 @@
     width: 100%;
     object-fit: contain;
     box-sizing: border-box;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .LearnMore-Card-SubImgs{
