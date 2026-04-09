@@ -3,41 +3,57 @@
     max-width: 1920px;
     margin: auto;
     padding: 60px;
+
     box-sizing: border-box;
+    font-family: Roboto;
 
 }
 
+.Pricing-H1{
+        
+   font-size: clamp(1rem, calc(1.2rem + 2 * min(100vw, 1920px) / 100), 3rem);
+    
+    font-family: Momo Trust Display;
+
+    width: 50%;
+    line-height: 100%;
+}
+
 .Pricing-Card {
-    padding: 20px;
-    background-color: rgba(245, 224, 255, 0.719);
     border-radius: 15px;
+    margin-top: 50px;
 }
 
 
 .Pricing-Card-Skill-Card {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 20px;
     width: 100%;
 }
 
 .Pricing-Card-Skill {
-    height: 200px;
-    background-color: white;
+    background-color: rgb(223, 213, 213);
     padding: 20px;
     box-sizing: border-box;
     cursor: pointer;
     border-radius: 15px;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
 }
 
 
 .Pricing-Card-Skill:hover {
-    outline: 5px gray solid;
+    outline: 5px blueviolet solid;
+    outline-offset: 2px;
 }
 
 .Pricing-Active {
-    background-color: rgb(162, 176, 255);
+    background-color: blueviolet;
+    color: white;
 
 }
 
@@ -54,12 +70,29 @@
 
 
 
-.Pricing-Card-Compare {
-    padding: 60px;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    max-width: 500px;
-    background-color: white;
+.Pricing-Card-Compare table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.Pricing-Card-Compare td, th {
+  border: 1px solid #dddddd;
+
+  text-align: left;
+  padding: 8px;
+}
+
+
+
+
+@media (max-width: 1000px) {
+    .Pricing{
+        padding-inline: 20px;
+    }
+
+    .Pricing-H1{
+        width: 100%;
+    }
 }

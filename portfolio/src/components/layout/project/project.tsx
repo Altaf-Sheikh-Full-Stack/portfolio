@@ -44,7 +44,8 @@ const Project = () => {
 
     return (
         <section className="Project">
-            <h1 className="Project-H1">A Collection of Projects That Reflect My Skills, Passion, and Creative Journey</h1>
+            
+            <h1 className="Project-H1">Check out a Collection of my work, That perfectly show my skill, passion and creativity.</h1>
             <div className="Project-Card" ref={divRef}>
                 {ProjectData.map((data, index) => (
                     <div key={index} className="Project-Card-Content" onClick={() => learnMore(data)}>

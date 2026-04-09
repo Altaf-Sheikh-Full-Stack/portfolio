@@ -1,6 +1,7 @@
 .Project {
-    background-color: red;
-    padding: min(10rem, 5%);
+    background-color: rgb(255, 255, 255);
+    padding-inline: 60px;
+    padding-top: 60px;
     max-width: 1920px;
     margin: auto;
     box-sizing: border-box;
@@ -10,11 +11,13 @@
 }
 
 .Project-H1 {
-    background-color: white;
-    font-family: Roboto;
-    font-size: 40px;
-    font-display: fallback;
+    
+   font-size: clamp(1rem, calc(1.2rem + 2 * min(100vw, 1920px) / 100), 3rem);
+    
+    font-family: Momo Trust Display;
+
     width: 50%;
+    line-height: 100%;
 }
 
 .Project-Card {
@@ -97,4 +100,12 @@
 .Project-Arrows svg:hover{
     outline: 2px black solid;
     outline-offset: 2px;
+}
+
+
+
+@media (max-width: 1000px) {
+    .Project-H1{
+        width: 100%;
+    }
 }

@@ -1,6 +1,6 @@
 import img from '../../../assets/Frame 1 (4).png'
 import imgs from '../../../assets/Frame 1.webp'
-import thumbnail from '../../../assets/Frame 2.webp'
+import thumbnail from '../../../assets/Frame 2 (1).webp'
 const ProjectData = [
     {
         imgs: [{ url: imgs }, { url: img }],

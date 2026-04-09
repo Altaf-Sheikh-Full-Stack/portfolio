@@ -145,7 +145,7 @@
         radial-gradient(ellipse 60% 50% at 60% 65%, rgba(85, 42, 121, 0.98), transparent 68%),
         radial-gradient(ellipse 65% 40% at 50% 60%, rgba(120, 190, 255, 0.89), transparent 68%),
         /* linear-gradient(180deg, #f7eaff 0%, #fde2ea 100%) */
-         linear-gradient(180deg, #ff5656 0%, #ff63f2 100%);
+        linear-gradient(180deg, #ff5656 0%, #ff63f2 100%);
 }
 
 
@@ -164,6 +164,8 @@
 @media (max-width: 1000px) {
 
     .Hero {
+        padding: 10px;
+        gap: 10px;
         grid-template-areas:
             "box2"
             "box2"
@@ -172,5 +174,6 @@
             "box5"
             "box3"
             "box4";
+
     }
 }
