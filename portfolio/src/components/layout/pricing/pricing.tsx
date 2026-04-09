@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './pricing.css'
-import PrimaryButton from '../../common/buttons/primary/button'
+// import PrimaryButton from '../../common/buttons/primary/button'
 
 const Pricing = () => {
 

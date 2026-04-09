@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, } from 'react'
 import './model.css'
 
 import NavContent from '../navcontent/navcontent'
