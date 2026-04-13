@@ -18,21 +18,3 @@
     cursor: default;
 }
 
-.Navbar-Open {
-    padding: 15px;
-    border-radius: 50px;
-    appearance: none;
-    touch-action: manipulation;
-    outline: 2px rgb(206, 213, 255) solid;
-    cursor: pointer;
-    transition: 250ms;
-    background-color: white;
-    color: #020024;
-}
-
-.Navbar-Open:hover {
-    outline: 2px white double;
-    outline-offset: 2px;
-    transform: scale(1.01);
-}
-

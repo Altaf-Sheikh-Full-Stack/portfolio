@@ -6,7 +6,7 @@
     font-family: poppins;
     touch-action: manipulation;
     will-change: transform;
-    border-radius: 50px;
+    border-radius: var(--radiusFull);
     font-weight: 700;
     padding: 20px;
     transition: 250ms;
@@ -18,20 +18,12 @@
 
 
 .PrimaryButton:hover {
-    outline: 2px solid blueviolet;
-    outline-offset: 2px;
+    transform: scale(1.05);
 }
 
 .PrimaryButton:active {
-    box-shadow: none;
     transform: scale(0.9);
 }
 
 
 
-
-.PrimaryButton:focus {
-    outline: 2px solid blueviolet;
-    outline-offset: 2px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-}

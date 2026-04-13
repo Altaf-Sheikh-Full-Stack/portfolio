@@ -1,5 +1,5 @@
 :root {
   /* Border Radius */
-  --radiusCard: 15px;
-  --radiusButton: 50px
+  --radiusHalf: 15px;
+  --radiusFull: 50px;
 }

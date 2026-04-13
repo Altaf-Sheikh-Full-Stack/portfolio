@@ -16,7 +16,7 @@
 }
 
 .Hero-Child-1 {
-    border-radius: var(--radiusCard);
+    border-radius: var(--radiusHalf);
     grid-area: box1;
     display: flex;
     justify-content: start;
@@ -47,13 +47,13 @@
 .Hero-Child-2 {
     background-color: rgb(255, 255, 255);
     grid-area: box2;
-    border-radius: var(--radiusCard);
+    border-radius: var(--radiusHalf);
 
 }
 
 
 .Hero-Child-2-img {
-    border-radius: var(--radiusCard);
+    border-radius: var(--radiusHalf);
     background-color: red;
     object-fit: cover;
     width: 100%;
@@ -61,7 +61,7 @@
 }
 
 .Hero-Child-3 {
-    border-radius: var(--radiusCard);
+    border-radius: var(--radiusHalf);
     background-color: rgb(255, 255, 255);
     grid-area: box3;
     overflow: hidden;
@@ -96,7 +96,7 @@
 }
 
 .Hero-Child-4 {
-    border-radius: var(--radiusCard);
+    border-radius: var(--radiusHalf);
     grid-area: box4;
     padding: min(5rem, 8%);
     box-sizing: border-box;
@@ -132,7 +132,7 @@
 
 
 .Hero-Child-5 {
-    border-radius: var(--radiusCard);
+    border-radius: var(--radiusHalf);
     color: rgb(255, 255, 255);
     grid-area: box5;
     padding: min(5rem, 8%);

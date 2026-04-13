@@ -12,7 +12,6 @@
     width: 100%;
     object-fit: contain;
     box-sizing: border-box;
-
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -20,6 +19,7 @@
 .LearnMore-Card-SubImgs{
     display: flex;
     gap: 10px;
+    padding: 10px;
     
 }
 
@@ -32,4 +32,41 @@
 .LearnMore-Card-SubImgs-Imgs:hover{
     outline: 2px red solid;
     outline-offset: 2px;   
+}
+
+
+.Project-Info{
+    background-color: red;
+    display: flex;
+    padding: 60px;
+    align-items: center;
+    
+}
+
+.Project-Info-Content{
+    width: 50%;
+}
+
+.Project-Info-Content-Button{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    background-color: aqua;
+}
+
+
+.Project-About{
+    background-color: blueviolet;
+    display: flex;
+    padding: 60px;
+}
+
+
+.Project-About-Problem{
+    width: 50%;
+}
+
+
+.Project-About-Solution{
+    width: 50%;
 }

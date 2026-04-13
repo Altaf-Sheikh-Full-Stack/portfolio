@@ -4,12 +4,13 @@ interface Image {
   url: string;
 };
 
-export interface ProjectType  {
+export interface ProjectType {
   imgs: Image[];
   category: string;
   heading: string;
-  description: string;
   budget: string;
+  problem: string;
+  solution: string;
 };
 
 type Datatype =

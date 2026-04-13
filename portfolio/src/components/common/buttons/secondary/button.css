@@ -6,7 +6,7 @@
     font-family: poppins;
     touch-action: manipulation;
     will-change: transform;
-    border-radius: 50px;
+    border-radius: var(--radiusFull);
     font-weight: 700;
     padding: 20px;
     transition: 250ms;
@@ -17,8 +17,7 @@
 
 
 .SecondaryButton:hover {
-    outline: 2px solid gray;
-    outline-offset: 2px; 
+    transform: scale(1.05);
 }
 
 .SecondaryButton:active {
@@ -29,7 +28,7 @@
 
 
 
-.SecondaryButton:focus {
+/* .SecondaryButton:focus {
     outline: 2px solid gray;
     outline-offset: 2px;
-}
+} */

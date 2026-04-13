@@ -45,7 +45,7 @@
     margin: 30px;
     height: calc(100% - 60px);
     background-color: white;
-    border-radius: 10px;
+    border-radius: var(--radiusHalf);
     padding: 40px;
     box-sizing: border-box;
     display: flex;
@@ -91,7 +91,7 @@
 .Skill-Box-3-Content {
     margin: 30px;
     height: calc(100% - 60px);
-    border-radius: 10px;
+    border-radius: var(--radiusHalf);
     padding: 40px;
     box-sizing: border-box;
     display: flex;
@@ -134,7 +134,7 @@
     margin: 30px;
     height: calc(100% - 60px);
 
-    border-radius: 10px;
+    border-radius: var(--radiusHalf);
     padding: 40px;
     box-sizing: border-box;
     display: flex;
@@ -196,7 +196,7 @@
 .Skill-Box-5-Content {
     margin: 30px;
     height: calc(100% - 60px);
-    border-radius: 10px;
+    border-radius: var(--radiusHalf);
     padding: 40px;
     box-sizing: border-box;
     display: flex;

@@ -7,6 +7,8 @@
     justify-content: center;
     align-items: center;
     overflow: auto;
+    max-width: 1920px;
+    margin: auto;
 }
 
 .Model-Content {
@@ -24,20 +26,22 @@
 
 
 
-
-
-
 .subnavbar-close {
     background-color: rgb(255, 246, 246);
     padding: 15px;
-    border-radius: 10px;
+    border-radius: 50px;
     touch-action: manipulation;
     cursor: pointer;
     position: absolute;
     margin: 20px;
+    transition: 250ms;
 }
 
-.subnavbar-close:hover {
-    outline: 2px blueviolet solid;
-    outline-offset: 2px;
+.subnavbar-close:hover{
+    transform: scale(1.1);
 }
+
+.subnavbar-close:active{
+    transform: scale(0.9);
+}
+
