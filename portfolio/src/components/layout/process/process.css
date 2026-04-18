@@ -1,0 +1,140 @@
+.Process {
+  background-color: white;
+  padding: 60px;
+  max-width: 1920px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.Process h1 {
+  width: 50%;
+  font-family: var(--fontPrimary);
+  font-size: clamp(1rem, calc(1.2rem + 2 * min(100vw, 1920px) / 100), 3rem);
+  line-height: 100%;
+}
+
+.Process-Child {
+  margin-top: 50px;
+  background-color: whitesmoke;
+  color: white;
+  font-family: var(--fontSecondary);
+
+  display: grid;
+  box-sizing: border-box;
+  gap: 20px;
+  grid-template-areas:
+    "box1 box1 box1 blank11 black12 blank13 blank14 blank15 blank16 blank17 blank18 blank19 blank101 blank102 blank103"
+    "black21 arrow1 box2 box2 box2 blank23 blank24 blank25 blank26 blank27 blank28 blank29 blank201 blank202 blank203"
+    "blank31 blank32 blank33 arrow2 box3 box3 box3 blank35 blank36 blank37 blank38 blank39 blank301 blank302 blank303"
+    "blank41 blank42 blank43 blank44 blank45 arrow3 box4 box4 box4 blank47 blank48 blank49 blank401 blank402 blank403"
+    "blank51 blank52 blank53 blank54 blank55 blank56 blank57 arrow4 box5 box5 box5 blank59 blank501 blank402 blank403"
+    "blank61 blank62 blank63 blank64 blank65 blank66 blank67 blank68 blank69 arrow5 box6 box6 box6 blank402 blank403"
+    "blank71 blank72 blank73 blank74 blank75 blank76 blank77 blank78 blank79 blank701 blank702 arrow6 box7 box7 box7";
+  overflow-x: auto;
+}
+
+.Process-Child-0-1 {
+  grid-area: arrow1;
+  height: 100%;
+  fill: blueviolet;
+}
+
+.Process-Child-0-2 {
+  grid-area: arrow2;
+  height: 100%;
+  fill: blueviolet;
+}
+
+.Process-Child-0-3 {
+  grid-area: arrow3;
+  height: 100%;
+  fill: blueviolet;
+}
+
+.Process-Child-0-4 {
+  grid-area: arrow4;
+  height: 100%;
+  fill: blueviolet;
+}
+
+.Process-Child-0-5 {
+  grid-area: arrow5;
+  height: 100%;
+  fill: blueviolet;
+}
+
+.Process-Child-0-6 {
+  grid-area: arrow6;
+  height: 100%;
+  fill: blueviolet;
+}
+
+.Process-Child-1 {
+  grid-area: box1;
+  background-color: blueviolet;
+  padding: 20px;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Process-Child-2 {
+  grid-area: box2;
+  background-color: blueviolet;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  white-space: nowrap;
+}
+
+.Process-Child-3 {
+  grid-area: box3;
+  background-color: blueviolet;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  white-space: nowrap;
+}
+
+.Process-Child-4 {
+  grid-area: box4;
+  background-color: blueviolet;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  white-space: nowrap;
+}
+
+.Process-Child-5 {
+  grid-area: box5;
+  background-color: blueviolet;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  white-space: nowrap;
+}
+
+.Process-Child-6 {
+  grid-area: box6;
+  background-color: blueviolet;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  white-space: nowrap;
+}
+
+.Process-Child-7 {
+  grid-area: box7;
+  background-color: blueviolet;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  white-space: nowrap;
+}

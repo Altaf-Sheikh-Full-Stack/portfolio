@@ -17,18 +17,18 @@
 
 
 .SecondaryButton:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 .SecondaryButton:active {
-    transform: scale(0.9);
+    transform: scale(1);
 }
 
 
 
 
 
-/* .SecondaryButton:focus {
-    outline: 2px solid gray;
+.SecondaryButton:focus {
+    outline: 2px solid black;
     outline-offset: 2px;
-} */
+} 

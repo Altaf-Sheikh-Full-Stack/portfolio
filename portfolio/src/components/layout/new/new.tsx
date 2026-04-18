@@ -1,24 +1,13 @@
 import './new.css'
 import img from '../../../assets/img.png'
+// import img from '../../../assets/ChatGPT Image Apr 16, 2026, 08_10_47 AM.png'
 
 import About from './about/about'
 import PrimaryButton from '../../common/buttons/primary/button'
 import SecondaryButton from '../../common/buttons/secondary/button'
 import Testimonials from '../testimonials/testimonials'
-import { useEffect, useRef } from 'react'
 const Hero = () => {
     
-
-        const hasRendered = useRef(false);
-    
-        useEffect(() => {
-            if (hasRendered.current) {
-                console.log("🔁 Home re-rendered");
-            } else {
-                console.log("🆕 First Home render");
-                hasRendered.current = true;
-            }
-        });
     return (
         <section className='Hero'>
             <div className='Hero-Child-1'>

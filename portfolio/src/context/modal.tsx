@@ -11,6 +11,7 @@ export interface ProjectType {
   budget: string;
   problem: string;
   solution: string;
+  link:string;
 };
 
 type Datatype =

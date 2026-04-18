@@ -2,4 +2,14 @@
   /* Border Radius */
   --radiusHalf: 15px;
   --radiusFull: 50px;
+
+  /* Font */
+  --fontPrimary: "Momo Trust Display", sans-serif;
+  --fontSecondary: "Roboto", sans-serif;
+
+  /* color */
+
+  --colorPrimary: blueviolet;
+  --colorSecondary:white;
+
 }

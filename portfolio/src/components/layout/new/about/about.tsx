@@ -19,7 +19,7 @@ const About = React.memo(() => {
     return (
         <div className="About">
             <h1 className='About-H1'>Hi,
-                My name is altaf sheikh i am a full stack devloper with 3 years if industry exprince
+                Hi, my name is Altaf Sheikh. I am a full-stack developer with over 3 years of industry experience.
             </h1>
             <div className='About-Info'>
                 <div className='About-Info-Child-1'>

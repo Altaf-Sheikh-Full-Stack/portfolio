@@ -7,7 +7,7 @@ const Navbar = () => {
 
     return (
         <section className="Navbar">
-            <h3>
+            <h3 className="Navbar-H3">
                 Altaf <br /> Sheikh
             </h3>
             <div onClick={() => setComponent({ type: "Navbar" })}>

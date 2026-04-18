@@ -1,72 +1,101 @@
-
-
 .LearnMore {
-    background-color: aqua;
-    width: 100%;
-        border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
-
 
 .LearnMore-Card-Imgs {
-    width: 100%;
-    object-fit: contain;
-    box-sizing: border-box;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+  width: 100%;
+  object-fit: contain;
+  box-sizing: border-box;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
-.LearnMore-Card-SubImgs{
-    display: flex;
-    gap: 10px;
-    padding: 10px;
-    
+.LearnMore-Card-SubImgs {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
 }
 
-.LearnMore-Card-SubImgs-Imgs{
-    width: 100px;
-    cursor: pointer;
-    transition: 250ms;
+.LearnMore-Card-SubImgs-Imgs {
+  width: 100px;
+  cursor: pointer;
+  transition: 250ms;
 }
 
-.LearnMore-Card-SubImgs-Imgs:hover{
-    outline: 2px red solid;
-    outline-offset: 2px;   
+.LearnMore-Card-SubImgs-Imgs:hover {
+  outline: 2px blueviolet solid;
+  outline-offset: 2px;
+}
+
+.Project-Info {
+  display: flex;
+  padding: 60px;
+  align-items: center;
+  background-color: white;
+}
+
+.Project-Info-Content {
+  width: 50%;
+}
+
+.LearnMore-Card-category {
+  font-family: var(--fontSecondary);
+}
+
+.LearnMore-Card-h1 {
+  font-family: var(--fontPrimary);
+}
+
+.Project-Info-Content-Button {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+}
+
+.Project-About {
+  background-color: white;
+  display: flex;
+  padding: 60px;
+  gap: 30px;
+}
+
+.Project-About-Problem {
+  width: 50%;
+  background-color: whitesmoke;
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Project-About-Problem-H3{
+    font-family: var(--fontPrimary);
+}
+
+.Project-About-Problem-P{
+    font-family: var(--fontSecondary);
+}
+
+.Project-About-Solution {
+  width: 50%;
+  background-color: whitesmoke;
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Project-About-Solution-H3{
+    font-family: var(--fontPrimary);
 }
 
 
-.Project-Info{
-    background-color: red;
-    display: flex;
-    padding: 60px;
-    align-items: center;
-    
-}
-
-.Project-Info-Content{
-    width: 50%;
-}
-
-.Project-Info-Content-Button{
-    width: 50%;
-    display: flex;
-    justify-content: end;
-    background-color: aqua;
+.Project-About-Solution-P{
+    font-family: var(--fontSecondary);
 }
 
 
-.Project-About{
-    background-color: blueviolet;
-    display: flex;
-    padding: 60px;
-}
-
-
-.Project-About-Problem{
-    width: 50%;
-}
-
-
-.Project-About-Solution{
-    width: 50%;
-}

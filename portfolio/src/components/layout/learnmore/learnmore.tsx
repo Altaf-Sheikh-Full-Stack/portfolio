@@ -34,22 +34,24 @@ const LearnMore = () => {
                     </div>
                     <div className='Project-Info'>
                         <div className='Project-Info-Content'>
-                            <p className='LearnMore-Card-Name'>{data.category}</p>
-                            <h1>{data.heading}</h1>
+                            <p className='LearnMore-Card-category'>{data.category}</p>
+                            <h1 className='LearnMore-Card-h1'>{data.heading}</h1>
                         </div>
                         <div className='Project-Info-Content-Button'>
-                            <PrimaryButton name={'Live preview'} />
+                            <a href={data.link}>
+                                <PrimaryButton name={'Live preview'} />
+                            </a>
                         </div>
                     </div>
 
                     <div className='Project-About'>
                         <div className='Project-About-Problem'>
-                            <h3>Problem</h3>
-                            <p>{data.problem}</p>
+                            <h3 className='Project-About-Problem-H3'>Problem</h3>
+                            <p className='Project-About-Problem-P'>{data.problem}</p>
                         </div>
                         <div className='Project-About-Solution'>
-                            <h3>Solution</h3>
-                            <p>{data.solution}</p>
+                            <h3 className='Project-About-Solution-H3'>Solution</h3>
+                            <p className='Project-About-Solution-P'>{data.solution}</p>
                         </div>
 
                     </div>

@@ -37,6 +37,7 @@ const ProjectData = [
             "Many people want to organize all their data in one place and extract meaningful insights from it over time. However, most existing tools in the market come with a steep learning curve. They often require technical knowledge, making them inaccessible and overwhelming for the average user.",
         solution:
             "We took on this challenge to build a tool that is simple, intuitive, and accessible to everyone. Our solution allows users to get started within minutes—no technical expertise required—while seamlessly organizing and managing their data, so they can focus on gaining insights instead of struggling with complexity.",
+        link: "google.com",
     },
 
     {
@@ -47,6 +48,7 @@ const ProjectData = [
         budget: `$996 - $1200`,
         problem: "Karte hai bro",
         solution: "Kar diya bro",
+        link: "google.com",
     },
 
     {
@@ -57,6 +59,7 @@ const ProjectData = [
         budget: `$996 - $1200`,
         problem: "Karte hai bro",
         solution: "Kar diya bro",
+        link: "google.com",
     },
 
     {
@@ -67,6 +70,7 @@ const ProjectData = [
         budget: `$996 - $1200`,
         problem: "Millions of people lose time and trust every day navigating fragmented, unreliable information online, turning simple decisions into frustrating and inefficient experiences.",
         solution: "We are building a highly reliable, user-first platform that brings accurate, verified, and personalized information into one place—empowering people to make faster, smarter decisions with confidence and trust.",
+        link: "google.com",
     },
 
     {
@@ -77,6 +81,7 @@ const ProjectData = [
         budget: `$996 - $1200`,
         problem: "Karte hai bro",
         solution: "Kar diya bro",
+        link: "google.com",
     },
 
     {
@@ -87,6 +92,7 @@ const ProjectData = [
         budget: `$996 - $1200`,
         problem: "Karte hai bro",
         solution: "Kar diya bro",
+        link: "google.com",
     },
 ];
 
