@@ -11,7 +11,7 @@ const Navbar = () => {
                 Altaf <br /> Sheikh
             </h3>
             <div onClick={() => setComponent({ type: "Navbar" })}>
-                <SecondaryButton name={"Menu"} />
+                {/* <SecondaryButton name={"Menu"} /> */}
             </div>
 
         </section>

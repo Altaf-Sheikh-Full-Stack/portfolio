@@ -7,7 +7,7 @@ import Hero from "../components/layout/new/new";
 import Pricing from "../components/layout/pricing/pricing";
 import Footer from "../components/layout/footer/footer";
 import Process from "../components/layout/process/process";
-import CaseStudy from "../components/layout/casestudy/casestudy";
+
 
 
 const HomePage = () => {
@@ -21,7 +21,6 @@ const HomePage = () => {
       <Skill />
       <Project />
       <Process/>
-      <CaseStudy/>
       <Pricing/>
       <Footer/>
     </>

@@ -23,8 +23,7 @@ const Hero = () => {
             <div className='Hero-Child-4'>
                 <h1>We works togther and make thing works</h1>
                 <div className='Hero-Child-4-Buttons'>
-                    <SecondaryButton name={'Check my work'} />
-                    <PrimaryButton name={'Hire me'} />
+                    <a href="https://calendly.com/defaultcompny0/30min"><PrimaryButton name={'Book meeting'} /></a>
                 </div>
 
             </div>
